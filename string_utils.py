@@ -19,6 +19,10 @@ def split_at_first_digit(formula):
 
 
 def split_before_each_uppercases(formula) :
+
+    if not formula:
+      return []
+    
     split_formula = []
     start = 0 
     end = 1
@@ -36,4 +40,5 @@ def split_before_each_uppercases(formula) :
     split_formula.append(formula[start:end])
 
     return split_formula
+
 
